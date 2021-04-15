@@ -1,6 +1,9 @@
 .updateMobile {
     display: none;
 }
+html{
+
+}
 body{
     margin: auto;
 }
@@ -93,7 +96,6 @@ body{
 .moreCities {
     max-width: 1080px;
     margin: auto;
-    display: grid;
     text-align: left;
     grid-template-columns: repeat(2, 1fr);
     /*grid-template-rows: 1fr 400px 1fr;*/
@@ -124,7 +126,7 @@ body{
 .animeWeather {
     height: 60px;
     width: 70px;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 
@@ -132,7 +134,7 @@ body{
     color: #848484;
     font-size: 40px;
     vertical-align: bottom;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .newCityInput {
@@ -152,7 +154,7 @@ body{
     color: #848484;
     font-size: 40px;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .cityText {
@@ -176,6 +178,7 @@ ul {
     display: flex;
     flex-direction: row;
     margin: 10px;
+
 }
 
 
@@ -196,7 +199,11 @@ header {
     margin: auto;
     text-align: left;
 }
-
+@media all and (min-width: 500px) {
+    .moreCities{
+        display: grid;
+    }
+}
 @media all and (max-width: 900px) {
     .name {
         font-size: 28px;
@@ -210,9 +217,7 @@ header {
     .cityText{
         font-size: 30px;
     }
-    #temperature{
-        font-size: 100px;
-    }
+
     #newCity {
         text-align:left ;
         margin: auto 10px;
@@ -291,7 +296,16 @@ header {
     }
 }
 @media all and (max-width: 500px) {
-
+    #temperature{
+        font-size: 40px;
+    }
+    #weather{
+        height: 150px;
+        width: 150px;
+    }
+    .m10{
+        font-size: 30px;
+    }
     .newCityInput{
         width: 70%;
     }
@@ -304,8 +318,8 @@ header {
     }
 }
 #buttonDonate{
-    height: 70px;
-    width: 80px
+    height: 60px;
+    width: 70px;
 }
 .krestStyles{
     width: 50px;
