@@ -1,7 +1,9 @@
 .updateMobile {
     display: none;
 }
-
+body{
+    margin: auto;
+}
 .update {
     height: 55px;
     font-size: 20px;
@@ -215,19 +217,9 @@ header {
         text-align:left ;
         margin: auto 10px;
     }
-    .updateMobile {
-        display: inline;
-        height: 80px;
-        width: 80px;
-        background: white;
-        border: 0;
-        margin: auto 15px;
-        float: right;
-    }
 
-    .update {
-        display: none;
-    }
+
+
     .moreCities {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
@@ -284,7 +276,22 @@ header {
 
 }
 
+@media all and (max-width: 670px) {
+    .update {
+        display: none;
+    }
+    .updateMobile {
+        display: inline;
+        height: 80px;
+        width: 80px;
+        background: white;
+        border: 0;
+        margin: auto 15px;
+        float: right;
+    }
+}
 @media all and (max-width: 500px) {
+
     .newCityInput{
         width: 70%;
     }
