@@ -28,7 +28,7 @@ body{
     margin: 10px;
 }
 .mb25{
-    margin-bottom: 25px;
+
 }
 
 #weather {
@@ -53,7 +53,7 @@ body{
 
 .infoName {
     font-weight: bold;
-    justify-content: space-between;
+
 }
 
 .favorites {
@@ -86,11 +86,7 @@ body{
     color: #748488;
     text-align: left;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-            "city cityDesc"
-            "favorites newCity"
-            "moreCities moreCities";
+
 }
 
 .moreCities {
@@ -100,6 +96,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
     list-style-type: none;
+    grid-gap: 25px 0;
 }
 
 
@@ -114,6 +111,7 @@ body{
     border: 0;
     height: 60px;
     width: 60px;
+    margin-left: auto;
 }
 
 .animeWeather {
@@ -147,7 +145,7 @@ body{
     color: #848484;
     font-size: 40px;
     font-weight: bold;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 .cityText {
@@ -227,6 +225,7 @@ header {
                 "cityBlock"
                 "cityBlock"
                 "cityBlock";
+
     }
     .newCityInput{
         width: 85%;
