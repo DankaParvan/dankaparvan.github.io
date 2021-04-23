@@ -36,11 +36,7 @@ body{
     width: 200px;
 }
 
-.wind,
-.cloudy,
-.pressure,
-.humidity,
-.coordinates {
+.weatherDisplay {
     display: flex;
     margin: 10px;
     justify-content: space-between;
